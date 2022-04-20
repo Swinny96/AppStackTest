@@ -1,4 +1,5 @@
 import React from "react";
+import styled from 'styled-components'
 
 import PerfectScrollbar from "react-perfect-scrollbar";
 
@@ -13,10 +14,13 @@ const Sidebar = ({ items, showFooter = true }) => {
     <nav className={`sidebar ${!isOpen ? "collapsed" : ""}`}>
       <div className="sidebar-content">
         <PerfectScrollbar>
-          <a className="sidebar-brand" href="/">
-            <Logo /> <span className="align-middle me-3">AppStack</span>
-          </a>
-
+          <SidebarBrand className="sidebar-brand" href="/">
+            <Logo />
+            <Title>
+              <span className="align-middle me-3">Enghouse</span>
+              <span className="align-middle me-3">Networks</span>
+            </Title>
+          </SidebarBrand>
           <SidebarNav items={items} />
         </PerfectScrollbar>
       </div>
@@ -25,3 +29,21 @@ const Sidebar = ({ items, showFooter = true }) => {
 };
 
 export default Sidebar;
+
+const SidebarBrand = styled.a`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  svg {
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+  }
+`
+
+const Title = styled.div`
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+`
