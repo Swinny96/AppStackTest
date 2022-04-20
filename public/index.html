@@ -25,8 +25,15 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+    <link rel="preconnect" href="//fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- PICK ONE OF THE STYLES BELOW -->
+    <link href="/css/light.css" rel="stylesheet" class="js-stylesheet">
+    <!-- <link href="/css/dark.css" rel="stylesheet" class="js-stylesheet"> -->
+    <style>body { opacity: 0; }</style>
   </head>
-  <body>
+  <body data-theme="default" data-layout="fluid" data-sidebar-position="left" data-sidebar-behavior="sticky">
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--

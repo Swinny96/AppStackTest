@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import "./assets/scss/light.scss";
+import { Provider } from "react-redux";
+import { store } from "./redux/store";
+import { SidebarProvider } from "./contexts/SidebarContext";
+import { LayoutProvider } from "./contexts/LayoutContext";
 
-function App() {
+import Tables from "./components/Table";
+import Sidebar from "./components/sidebar/Sidebar";
+import NavbarComponent from "./components/navbar/NavbarSimple";
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}>
+          <SidebarProvider>
+          <LayoutProvider>
+              <div className="wrapper">
+                <Sidebar />
+                <div class="main">
+                  <NavbarComponent />
+                  <main class="content">
+                    <Tables />
+                  </main>
+                </div>
+              </div>
+          </LayoutProvider>
+          </SidebarProvider>
+    </Provider>
   );
 }
 
