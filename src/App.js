@@ -16,7 +16,7 @@ import { LayoutProvider } from "./contexts/LayoutContext";
 
 import Tables from "./components/Table";
 import Sidebar from "./components/sidebar/Sidebar";
-import NavbarComponent from "./components/navbar/NavbarSimple";
+import NavbarComponent from "./components/navbar/Navbar";
 
 const App = () => {
   //const content = useRoutes(routes);

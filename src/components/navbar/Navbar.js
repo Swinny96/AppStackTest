@@ -2,7 +2,7 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import { Button, Navbar, Nav, Form, InputGroup } from "react-bootstrap";
 
-/* import {
+import {
   FiAlertCircle,
   FiBell,
   FiBellOff,
@@ -10,13 +10,13 @@ import { Button, Navbar, Nav, Form, InputGroup } from "react-bootstrap";
   FiMessageCircle,
   FiUserPlus,
   FiSearch,
-} from "react-icons/fi"; */
+} from "react-icons/fi";
 
 import useSidebar from "../../hooks/useSidebar";
 
 import NavbarDropdown from "./NavbarDropdown";
 import NavbarDropdownItem from "./NavbarDropdownItem";
-import NavbarLanguages from "./NavbarLanguages";
+//import NavbarLanguages from "./NavbarLanguages";
 import NavbarUser from "./NavbarUser";
 
 import avatar1 from "../../assets/img/avatars/avatar.jpg";
@@ -97,7 +97,7 @@ const NavbarComponent = () => {
         <InputGroup className="input-group-navbar">
           <Form.Control placeholder={t("Search")} aria-label="FiSearch" />
           <Button variant="">
-            {/* <FiSearch className="feather" /> */}
+            <FiSearch className="feather" />
           </Button>
         </InputGroup>
       </Form>
@@ -107,7 +107,7 @@ const NavbarComponent = () => {
           <NavbarDropdown
             header="New Messages"
             footer="Show all messages"
-            // icon={FiMessageCircle}
+            icon={FiMessageCircle}
             count={messages.length}
             showBadge
           >
@@ -134,28 +134,28 @@ const NavbarComponent = () => {
           <NavbarDropdown
             header="New Notifications"
             footer="Show all notifications"
-            // icon={FiBellOff}
+            icon={FiBellOff}
             count={notifications.length}
           >
             {notifications.map((item, key) => {
-              // let icon = <FiBell size={18} className="text-warning" />;
+              let icon = <FiBell size={18} className="text-warning" />;
 
               if (item.type === "important") {
-                // icon = <FiAlertCircle size={18} className="text-danger" />;
+                icon = <FiAlertCircle size={18} className="text-danger" />;
               }
 
               if (item.type === "login") {
-                // icon = <FiHome size={18} className="text-primary" />;
+                icon = <FiHome size={18} className="text-primary" />;
               }
 
               if (item.type === "request") {
-                // icon = <FiUserPlus size={18} className="text-success" />;
+                icon = <FiUserPlus size={18} className="text-success" />;
               }
 
               return (
                 <NavbarDropdownItem
                   key={key}
-                  // icon={icon}
+                  icon={icon}
                   title={item.title}
                   description={item.description}
                   time={item.time}
@@ -164,7 +164,7 @@ const NavbarComponent = () => {
             })}
           </NavbarDropdown>
 
-          <NavbarLanguages />
+          {/* <NavbarLanguages /> */}
           <NavbarUser />
         </Nav>
       </Navbar.Collapse>
