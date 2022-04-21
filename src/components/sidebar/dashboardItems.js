@@ -1,23 +1,23 @@
-// import {
-//   Bell,
-//   BookOpen,
-//   Calendar,
-//   CheckSquare,
-//   Grid,
-//   Heart,
-//   Layout,
-//   List,
-//   PieChart,
-//   Sliders,
-//   MapPin,
-//   Users,
-//   Share,
-// } from "react-icons/fi";
+import {
+  FiBell,
+  FiBookOpen,
+  FiCalendar,
+  FiCheckSquare,
+  FiGrid,
+  FiHeart,
+  FiLayout,
+  FiList,
+  FiPieChart,
+  FiSliders,
+  FiMapPin,
+  FiUsers,
+  FiShare,
+} from "react-icons/fi";
 
 const pagesSection = [
   {
     href: "/dashboard",
-    //icon: Sliders,
+    icon: <FiSliders />,
     title: "Dashboards",
     badge: "5",
     children: [
@@ -45,7 +45,7 @@ const pagesSection = [
   },
   {
     href: "/pages",
-    //icon: Layout,
+    icon: <FiLayout />,
     title: "Pages",
     children: [
       {
@@ -89,7 +89,7 @@ const pagesSection = [
   },
   {
     href: "/auth",
-    //icon: Users,
+    icon: <FiUsers />,
     title: "Auth",
     children: [
       {
@@ -116,7 +116,7 @@ const pagesSection = [
   },
   {
     href: "/docs/introduction",
-    //icon: BookOpen,
+    icon: <FiBookOpen />,
     title: "Documentation",
   },
 ];
@@ -124,7 +124,7 @@ const pagesSection = [
 const componentsSection = [
   {
     href: "/ui",
-    //icon: Grid,
+    icon: <FiGrid />,
     title: "UI Elements",
     children: [
       {
@@ -175,7 +175,7 @@ const componentsSection = [
   },
   {
     href: "/icons",
-    //icon: Heart,
+    icon: <FiHeart />,
     title: "Icons",
     badge: "1500+",
     children: [
@@ -191,7 +191,7 @@ const componentsSection = [
   },
   {
     href: "/forms",
-    //icon: CheckSquare,
+    icon: <FiCheckSquare />,
     title: "Forms",
     children: [
       {
@@ -214,7 +214,7 @@ const componentsSection = [
   },
   {
     href: "/tables",
-    //icon: List,
+    icon: <FiList />,
     title: "Tables",
   },
 ];
@@ -222,7 +222,7 @@ const componentsSection = [
 const pluginsSection = [
   {
     href: "/form-plugins",
-    //icon: CheckSquare,
+    icon: <FiCheckSquare />,
     title: "Form Plugins",
     children: [
       {
@@ -242,7 +242,7 @@ const pluginsSection = [
   },
   {
     href: "/advanced-tables",
-    //icon: List,
+    icon: <FiList />,
     title: "Advanced Tables",
     children: [
       {
@@ -269,7 +269,7 @@ const pluginsSection = [
   },
   {
     href: "/charts",
-    //icon: PieChart,
+    icon: <FiPieChart />,
     title: "Charts",
     badge: "New",
     children: [
@@ -286,12 +286,12 @@ const pluginsSection = [
   },
   {
     href: "/notifications",
-    //icon: Bell,
+    icon: <FiBell />,
     title: "Notifications",
   },
   {
     href: "/maps",
-    //icon: MapPin,
+    icon: <FiMapPin />,
     title: "Maps",
     children: [
       {
@@ -306,12 +306,12 @@ const pluginsSection = [
   },
   {
     href: "/calendar",
-    //icon: Calendar,
+    icon: <FiCalendar />,
     title: "Calendar",
   },
   {
     href: "/404",
-    //icon: Share,
+    icon: <FiShare />,
     title: "Multi Level",
     children: [
       {

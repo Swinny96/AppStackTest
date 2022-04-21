@@ -1,23 +1,23 @@
 import {
-  ArrowRightCircle,
-  Code,
-  Globe,
-  Info,
-  List,
-  Mail,
-  Shield,
-  Users,
-} from "react-feather";
+  FiArrowRightCircle,
+  FiCode,
+  FiGlobe,
+  FiInfo,
+  FiList,
+  FiMail,
+  FiShield,
+  FiUsers,
+} from "react-icons/fi";
 
 const gettingStartedSection = [
   {
     href: "/docs/introduction",
-    icon: Info,
+    icon: <FiInfo />,
     title: "Welcome",
   },
   {
     href: "/docs/getting-started",
-    icon: Code,
+    icon: <FiCode />,
     title: "Getting Started",
   },
 ];
@@ -25,12 +25,12 @@ const gettingStartedSection = [
 const developmentSection = [
   {
     href: "/docs/routing",
-    icon: ArrowRightCircle,
+    icon: <FiArrowRightCircle />,
     title: "Routing",
   },
   {
     href: "/docs/auth",
-    icon: Users,
+    icon: <FiUsers />,
     title: "Authentication",
     children: [
       {
@@ -53,42 +53,42 @@ const developmentSection = [
   },
   {
     href: "/docs/guards",
-    icon: Shield,
+    icon: <FiShield />,
     title: "Guards",
   },
   {
     href: "/docs/api-calls",
-    icon: ArrowRightCircle,
+    icon: <FiArrowRightCircle />,
     title: "API Calls",
   },
   {
     href: "/docs/environment-variables",
-    icon: ArrowRightCircle,
+    icon: <FiArrowRightCircle />,
     title: "Environment Variables",
   },
   {
     href: "/docs/redux",
-    icon: ArrowRightCircle,
+    icon: <FiArrowRightCircle />,
     title: "Redux",
   },
   {
     href: "/docs/internationalization",
-    icon: Globe,
+    icon: <FiGlobe />,
     title: "Internationalization",
   },
   {
     href: "/docs/eslint-and-prettier",
-    icon: ArrowRightCircle,
+    icon: <FiArrowRightCircle />,
     title: "ESLint & Prettier",
   },
   {
     href: "/docs/deployment",
-    icon: ArrowRightCircle,
+    icon: <FiArrowRightCircle />,
     title: "Deployment",
   },
   {
     href: "/docs/migrating-to-next-js",
-    icon: ArrowRightCircle,
+    icon: <FiArrowRightCircle />,
     title: "Migrating to Next.js",
   },
 ];
@@ -96,12 +96,12 @@ const developmentSection = [
 const helpSection = [
   {
     href: "/docs/support",
-    icon: Mail,
+    icon: <FiMail />,
     title: "Support",
   },
   {
     href: "/docs/changelog",
-    icon: List,
+    icon: <FiList />,
     title: "Changelog",
     badge: "v2.1.0",
   },

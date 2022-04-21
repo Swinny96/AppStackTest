@@ -14,7 +14,7 @@ import { LayoutProvider } from "./contexts/LayoutContext";
 
 //import { AuthProvider } from "./contexts/JWTContext";
 
-import Tables from "./components/Table";
+import Tables from "./components//tables/Tables";
 import Sidebar from "./components/sidebar/Sidebar";
 import NavbarComponent from "./components/navbar/Navbar";
 import Footer from "./components/Footer";
@@ -42,6 +42,7 @@ const App = () => {
                   <Footer />
                 </div>
               </div>
+              {/* <AuthProvider>{content}</AuthProvider> */}
             </LayoutProvider>
           </SidebarProvider>
         </ThemeProvider>
