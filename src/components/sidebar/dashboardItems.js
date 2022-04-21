@@ -1,23 +1,23 @@
-import {
-  Bell,
-  BookOpen,
-  Calendar,
-  CheckSquare,
-  Grid,
-  Heart,
-  Layout,
-  List,
-  PieChart,
-  Sliders,
-  MapPin,
-  Users,
-  Share,
-} from "react-feather";
+// import {
+//   Bell,
+//   BookOpen,
+//   Calendar,
+//   CheckSquare,
+//   Grid,
+//   Heart,
+//   Layout,
+//   List,
+//   PieChart,
+//   Sliders,
+//   MapPin,
+//   Users,
+//   Share,
+// } from "react-icons/fi";
 
 const pagesSection = [
   {
     href: "/dashboard",
-    icon: Sliders,
+    //icon: Sliders,
     title: "Dashboards",
     badge: "5",
     children: [
@@ -45,7 +45,7 @@ const pagesSection = [
   },
   {
     href: "/pages",
-    icon: Layout,
+    //icon: Layout,
     title: "Pages",
     children: [
       {
@@ -89,7 +89,7 @@ const pagesSection = [
   },
   {
     href: "/auth",
-    icon: Users,
+    //icon: Users,
     title: "Auth",
     children: [
       {
@@ -116,7 +116,7 @@ const pagesSection = [
   },
   {
     href: "/docs/introduction",
-    icon: BookOpen,
+    //icon: BookOpen,
     title: "Documentation",
   },
 ];
@@ -124,7 +124,7 @@ const pagesSection = [
 const componentsSection = [
   {
     href: "/ui",
-    icon: Grid,
+    //icon: Grid,
     title: "UI Elements",
     children: [
       {
@@ -175,7 +175,7 @@ const componentsSection = [
   },
   {
     href: "/icons",
-    icon: Heart,
+    //icon: Heart,
     title: "Icons",
     badge: "1500+",
     children: [
@@ -191,7 +191,7 @@ const componentsSection = [
   },
   {
     href: "/forms",
-    icon: CheckSquare,
+    //icon: CheckSquare,
     title: "Forms",
     children: [
       {
@@ -214,7 +214,7 @@ const componentsSection = [
   },
   {
     href: "/tables",
-    icon: List,
+    //icon: List,
     title: "Tables",
   },
 ];
@@ -222,7 +222,7 @@ const componentsSection = [
 const pluginsSection = [
   {
     href: "/form-plugins",
-    icon: CheckSquare,
+    //icon: CheckSquare,
     title: "Form Plugins",
     children: [
       {
@@ -242,7 +242,7 @@ const pluginsSection = [
   },
   {
     href: "/advanced-tables",
-    icon: List,
+    //icon: List,
     title: "Advanced Tables",
     children: [
       {
@@ -269,7 +269,7 @@ const pluginsSection = [
   },
   {
     href: "/charts",
-    icon: PieChart,
+    //icon: PieChart,
     title: "Charts",
     badge: "New",
     children: [
@@ -286,12 +286,12 @@ const pluginsSection = [
   },
   {
     href: "/notifications",
-    icon: Bell,
+    //icon: Bell,
     title: "Notifications",
   },
   {
     href: "/maps",
-    icon: MapPin,
+    //icon: MapPin,
     title: "Maps",
     children: [
       {
@@ -306,12 +306,12 @@ const pluginsSection = [
   },
   {
     href: "/calendar",
-    icon: Calendar,
+    //icon: Calendar,
     title: "Calendar",
   },
   {
     href: "/404",
-    icon: Share,
+    //icon: Share,
     title: "Multi Level",
     children: [
       {
