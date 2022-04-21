@@ -1,6 +1,13 @@
 import React from "react";
 import { Card, Col, Container, Row, Table } from "react-bootstrap";
 
+import { FiEdit2, FiTrash } from "react-icons/fi";
+
+import avatar1 from "../assets/img/avatars/avatar.jpg";
+import avatar2 from "../assets/img/avatars/avatar-2.jpg";
+import avatar3 from "../assets/img/avatars/avatar-3.jpg";
+import avatar4 from "../assets/img/avatars/avatar-4.jpg";
+
 const BasicTable = () => (
   <Card>
     <Card.Header>
@@ -27,7 +34,8 @@ const BasicTable = () => (
           <td>864-348-0485</td>
           <td className="d-none d-md-table-cell">June 21, 1961</td>
           <td className="table-action">
-
+            <FiEdit2 className="align-middle me-1" size={18} />
+            <FiTrash className="align-middle" size={18} />
           </td>
         </tr>
         <tr>
@@ -35,7 +43,8 @@ const BasicTable = () => (
           <td>914-939-2458</td>
           <td className="d-none d-md-table-cell">May 15, 1948</td>
           <td className="table-action">
-
+            <FiEdit2 className="align-middle me-1" size={18} />
+            <FiTrash className="align-middle" size={18} />
           </td>
         </tr>
         <tr>
@@ -43,7 +52,8 @@ const BasicTable = () => (
           <td>704-993-5435</td>
           <td className="d-none d-md-table-cell">September 14, 1965</td>
           <td className="table-action">
-
+            <FiEdit2 className="align-middle me-1" size={18} />
+            <FiTrash className="align-middle" size={18} />
           </td>
         </tr>
         <tr>
@@ -51,7 +61,8 @@ const BasicTable = () => (
           <td>765-382-8195</td>
           <td className="d-none d-md-table-cell">April 2, 1971</td>
           <td className="table-action">
-
+            <FiEdit2 className="align-middle me-1" size={18} />
+            <FiTrash className="align-middle" size={18} />
           </td>
         </tr>
         <tr>
@@ -59,7 +70,8 @@ const BasicTable = () => (
           <td>202-672-1407</td>
           <td className="d-none d-md-table-cell">October 12, 1966</td>
           <td className="table-action">
-
+            <FiEdit2 className="align-middle me-1" size={18} />
+            <FiTrash className="align-middle" size={18} />
           </td>
         </tr>
       </tbody>
@@ -93,7 +105,8 @@ const StripedRows = () => (
           <td>864-348-0485</td>
           <td className="d-none d-md-table-cell">June 21, 1961</td>
           <td className="table-action">
-
+            <FiEdit2 className="align-middle me-1" size={18} />
+            <FiTrash className="align-middle" size={18} />
           </td>
         </tr>
         <tr>
@@ -101,7 +114,8 @@ const StripedRows = () => (
           <td>914-939-2458</td>
           <td className="d-none d-md-table-cell">May 15, 1948</td>
           <td className="table-action">
-
+            <FiEdit2 className="align-middle me-1" size={18} />
+            <FiTrash className="align-middle" size={18} />
           </td>
         </tr>
         <tr>
@@ -109,7 +123,8 @@ const StripedRows = () => (
           <td>704-993-5435</td>
           <td className="d-none d-md-table-cell">September 14, 1965</td>
           <td className="table-action">
-
+            <FiEdit2 className="align-middle me-1" size={18} />
+            <FiTrash className="align-middle" size={18} />
           </td>
         </tr>
         <tr>
@@ -117,7 +132,8 @@ const StripedRows = () => (
           <td>765-382-8195</td>
           <td className="d-none d-md-table-cell">April 2, 1971</td>
           <td className="table-action">
-
+            <FiEdit2 className="align-middle me-1" size={18} />
+            <FiTrash className="align-middle" size={18} />
           </td>
         </tr>
         <tr>
@@ -125,7 +141,8 @@ const StripedRows = () => (
           <td>202-672-1407</td>
           <td className="d-none d-md-table-cell">October 12, 1966</td>
           <td className="table-action">
-
+            <FiEdit2 className="align-middle me-1" size={18} />
+            <FiTrash className="align-middle" size={18} />
           </td>
         </tr>
       </tbody>
@@ -221,7 +238,7 @@ const HoverableRows = () => (
         <tr>
           <td>
             <img
-              src=""
+              src={avatar1}
               width="48"
               height="48"
               className="rounded-circle me-2"
@@ -235,7 +252,7 @@ const HoverableRows = () => (
         <tr>
           <td>
             <img
-              src=""
+              src={avatar2}
               width="48"
               height="48"
               className="rounded-circle me-2"
@@ -249,7 +266,7 @@ const HoverableRows = () => (
         <tr>
           <td>
             <img
-              src=""
+              src={avatar3}
               width="48"
               height="48"
               className="rounded-circle me-2"
@@ -263,7 +280,7 @@ const HoverableRows = () => (
         <tr>
           <td>
             <img
-              src=""
+              src={avatar4}
               width="48"
               height="48"
               className="rounded-circle me-2"
@@ -305,7 +322,8 @@ const BorderedTable = () => (
           <td>864-348-0485</td>
           <td className="d-none d-md-table-cell">June 21, 1961</td>
           <td className="table-action">
-
+            <FiEdit2 className="align-middle me-1" size={18} />
+            <FiTrash className="align-middle" size={18} />
           </td>
         </tr>
         <tr>
@@ -313,7 +331,8 @@ const BorderedTable = () => (
           <td>914-939-2458</td>
           <td className="d-none d-md-table-cell">May 15, 1948</td>
           <td className="table-action">
-
+            <FiEdit2 className="align-middle me-1" size={18} />
+            <FiTrash className="align-middle" size={18} />
           </td>
         </tr>
         <tr>
@@ -321,7 +340,8 @@ const BorderedTable = () => (
           <td>704-993-5435</td>
           <td className="d-none d-md-table-cell">September 14, 1965</td>
           <td className="table-action">
-
+            <FiEdit2 className="align-middle me-1" size={18} />
+            <FiTrash className="align-middle" size={18} />
           </td>
         </tr>
         <tr>
@@ -329,7 +349,8 @@ const BorderedTable = () => (
           <td>765-382-8195</td>
           <td className="d-none d-md-table-cell">April 2, 1971</td>
           <td className="table-action">
-
+            <FiEdit2 className="align-middle me-1" size={18} />
+            <FiTrash className="align-middle" size={18} />
           </td>
         </tr>
         <tr>
@@ -337,7 +358,8 @@ const BorderedTable = () => (
           <td>202-672-1407</td>
           <td className="d-none d-md-table-cell">October 12, 1966</td>
           <td className="table-action">
-
+            <FiEdit2 className="align-middle me-1" size={18} />
+            <FiTrash className="align-middle" size={18} />
           </td>
         </tr>
       </tbody>
@@ -370,7 +392,8 @@ const ContextualClasses = () => (
           <td>864-348-0485</td>
           <td className="d-none d-md-table-cell">June 21, 1961</td>
           <td className="table-action">
-
+            <FiEdit2 className="align-middle me-1" size={18} />
+            <FiTrash className="align-middle" size={18} />
           </td>
         </tr>
         <tr className="table-primary">
@@ -378,7 +401,8 @@ const ContextualClasses = () => (
           <td>914-939-2458</td>
           <td className="d-none d-md-table-cell">May 15, 1948</td>
           <td className="table-action">
-
+            <FiEdit2 className="align-middle me-1" size={18} />
+            <FiTrash className="align-middle" size={18} />
           </td>
         </tr>
         <tr>
@@ -386,7 +410,8 @@ const ContextualClasses = () => (
           <td>704-993-5435</td>
           <td className="d-none d-md-table-cell">September 14, 1965</td>
           <td className="table-action">
-
+            <FiEdit2 className="align-middle me-1" size={18} />
+            <FiTrash className="align-middle" size={18} />
           </td>
         </tr>
         <tr className="table-success">
@@ -394,7 +419,8 @@ const ContextualClasses = () => (
           <td>765-382-8195</td>
           <td className="d-none d-md-table-cell">April 2, 1971</td>
           <td className="table-action">
-
+            <FiEdit2 className="align-middle me-1" size={18} />
+            <FiTrash className="align-middle" size={18} />
           </td>
         </tr>
         <tr>
@@ -402,7 +428,8 @@ const ContextualClasses = () => (
           <td>202-672-1407</td>
           <td className="d-none d-md-table-cell">October 12, 1966</td>
           <td className="table-action">
-
+            <FiEdit2 className="align-middle me-1" size={18} />
+            <FiTrash className="align-middle" size={18} />
           </td>
         </tr>
       </tbody>
