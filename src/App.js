@@ -17,6 +17,7 @@ import { LayoutProvider } from "./contexts/LayoutContext";
 import Tables from "./components/Table";
 import Sidebar from "./components/sidebar/Sidebar";
 import NavbarComponent from "./components/navbar/Navbar";
+import Footer from "./components/Footer";
 
 const App = () => {
   //const content = useRoutes(routes);
@@ -38,6 +39,7 @@ const App = () => {
                   <main class="content">
                     <Tables />
                   </main>
+                  <Footer />
                 </div>
               </div>
             </LayoutProvider>
