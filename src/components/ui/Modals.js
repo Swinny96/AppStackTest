@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Helmet } from "react-helmet-async";
 
 import { Button, Card, Col, Container, Modal, Row } from "react-bootstrap";
 
@@ -320,7 +319,6 @@ const ModalSizes = () => {
 
 const Modals = () => (
   <React.Fragment>
-    <Helmet title="Modals" />
     <Container fluid className="p-0">
       <h1 className="h3 mb-3">Modals</h1>
 

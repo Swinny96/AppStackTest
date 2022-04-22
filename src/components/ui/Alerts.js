@@ -1,5 +1,4 @@
 import React from "react";
-import { Helmet } from "react-helmet-async";
 import { Button, Card, Col, Container, Row, Alert } from "react-bootstrap";
 
 import { FiBell } from "react-icons/fi";
@@ -188,7 +187,6 @@ const AlertsWithButtons = () => (
 
 const Alerts = () => (
   <React.Fragment>
-    <Helmet title="Alerts" />
     <Container fluid className="p-0">
       <h1 className="h3 mb-3">Alerts</h1>
 

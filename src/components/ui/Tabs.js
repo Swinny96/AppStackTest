@@ -1,5 +1,4 @@
 import React from "react";
-import { Helmet } from "react-helmet-async";
 
 import { Col, Container, Nav, Row, Tab } from "react-bootstrap";
 
@@ -143,7 +142,6 @@ const TabsWithIconLabel = ({ name, className }) => (
 
 const TabsComponent = () => (
   <React.Fragment>
-    <Helmet title="Tabs" />
     <Container fluid className="p-0">
       <h1 className="h3 mb-3">Tabs</h1>
 
