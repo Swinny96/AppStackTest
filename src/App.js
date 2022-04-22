@@ -1,5 +1,9 @@
 import "./assets/scss/light.scss";
 
+import { Alert } from "react-bootstrap";
+
+import { FiBell } from "react-icons/fi";
+
 //import { useRoutes } from "react-router-dom";
 import { Provider } from "react-redux";
 import { HelmetProvider, Helmet } from "react-helmet-async";
@@ -18,6 +22,11 @@ import Tables from "./components//tables/Tables";
 import Sidebar from "./components/sidebar/Sidebar";
 import NavbarComponent from "./components/navbar/Navbar";
 import Footer from "./components/Footer";
+import Modals from "./components/ui/Modals";
+import TabsComponent from "./components/ui/Tabs";
+import Alerts from "./components/ui/Alerts";
+// import Cards from "./components/ui/Cards";
+// import CarouselComponent from "./components/ui/Carousel";
 
 const App = () => {
   //const content = useRoutes(routes);
@@ -37,7 +46,21 @@ const App = () => {
                 <div class="main">
                   <NavbarComponent />
                   <main class="content">
+                    <Alert variant="danger" dismissible>
+                      <div className="alert-icon">
+                        <FiBell fixedWidth />
+                      </div>
+                      <div className="alert-message">
+                        <strong>Hello there!</strong> This has been updated with
+                        Modals, Tabs & Alerts
+                      </div>
+                    </Alert>
                     <Tables />
+                    <Modals />
+                    <TabsComponent />
+                    <Alerts />
+                    {/* <Cards /> */}
+                    {/* <CarouselComponent /> */}
                   </main>
                   <Footer />
                 </div>
